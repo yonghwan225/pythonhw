@@ -1,0 +1,46 @@
+nums = [[5, 7, 12, 20, 25, 26],[30, 31, 34, 39,	41, 45],[10, 16, 19, 27, 37, 38],[4, 8, 22, 26,	32,	38],[1,	9, 10, 13, 35, 44]] # x : 6 , y : 5
+oddCnt = 0
+evenCnt = 0
+cnt = 0
+while True:
+    nMultiple = input('숫자를 입력하세요.(배수 구하기)')
+    if nMultiple.isdigit():
+       nMultiple = int(nMultiple)
+       break
+       if nMultiple <= 0:
+        print('error')
+    else:
+        print('error')
+        continue
+
+# 1. n의 배수
+# 2. 홀짝
+# 3. 평균 최대 최소
+for i in range(0, len(nums)):
+    print(nums[i])
+    oddCnt = 0
+    evenCnt = 0
+    cnt = 0
+    sum = 0
+    firstMaxNum = 0
+    firstMinNum = 100
+    
+    for j in range(0, 6):
+        if nums[i][j] % nMultiple == 0:
+            cnt += 1
+        if nums[i][j] % 2 == 1:
+            oddCnt += 1
+        else:
+            evenCnt += 1
+        sum += nums[i][j]
+        if int(nums[i][j]) > firstMaxNum:
+            firstMaxNum = int(nums[i][j])
+        if int(nums[i][j]) < firstMinNum:
+            firstMinNum = int(nums[i][j])
+    average= sum / 6     
+    print(f'{nMultiple}의 배수 {cnt}개')
+    print(f'홀수 : {oddCnt}개')
+    print(f'짝수 : {evenCnt}개')
+    print(f'평균값 : {average:.2f}')
+    print(f'최대값 : {firstMaxNum}')
+    print(f'최소값 : {firstMinNum}')
