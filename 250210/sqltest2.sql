@@ -1,5 +1,5 @@
 create database temp;
-create table students(id int(5) auto_increment primary key, name char(10),age int(5),grade char(5));
+create table students(id int(5) auto_increment primary key, name char(10), age int(5), grade char(5));
 
 insert into students values(1, 'Alice', 20, 'A');
 insert into students values(2, 'Bob', 22, 'B');
