@@ -27,7 +27,9 @@ void main()
     if (a > c)
     {
         printf("3.특별한숫자");
-    } else if (b > c) {
+    } else if (a == 0 && b > c) {
         printf("3.특별한숫자");
+    } else {
+        printf("특별하지 않은 숫자");
     }
 }
