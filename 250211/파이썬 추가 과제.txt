@@ -8,24 +8,24 @@ while True:
     print('세자리 숫자 네개 입력하기')
 
     try:
-        # 첫 번째 숫자 입력
+       
         num1 = int(input('첫 번째 숫자: '))
         if not (100 <= num1 <= 999212):  # 세자리 숫자 범위 확인
             print('세자리 숫자만 입력하세요.')
             continue  # 잘못된 입력일 경우 다시 입력받음
 
-        # 두 번째 숫자 입력
+        
         num2 = int(input('두 번째 숫자: '))
         if not (100 <= num2 <= 999):  # 세자리 숫자 범위 확인
             print('세자리 숫자만 입력하세요.')
             continue  
 
-        # 세 번째 숫자 입력
+       
         num3 = int(input('세 번째 숫자: '))
         if not (100 <= num3 <= 999):  # 세자리 숫자 범위 확인
             print('세자리 숫자만 입력하세요.')
             continue 
-        # 네 번째 숫자 입력
+        
         num4 = int(input('네 번째 숫자: '))
         if not (100 <= num4 <= 999):  # 세자리 숫자 범위 확인
             print('세자리 숫자만 입력하세요.')
