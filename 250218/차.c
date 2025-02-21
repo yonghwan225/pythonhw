@@ -3,10 +3,10 @@
 
 // 자동차 종류를 나타내는 열거형 정의
 enum CarType {
-    SEDAN = 1,  // 세단
-    SUV = 2,    // SUV
-    TRUCK = 3,  // 트럭
-    VAN = 4     // 밴
+    SEDAN ,  // 세단
+    SUV ,    // SUV
+    TRUCK ,  // 트럭
+    VAN      // 밴
 };
 
 int main() {
@@ -21,7 +21,7 @@ int main() {
     enum CarType carType; // 자동차 종류를 저장할 변수
 
     // 자동차 종류에 해당하는 문자열 배열
-    char* car[] = {"", "SEDAN", "SUV", "TRUCK", "VAN"};
+    char* car[] = {"SEDAN", "SUV", "TRUCK", "VAN"};
 
     // 사용자로부터 모델명 입력 받기
     printf("자동차 모델명을 입력하세요: ");
